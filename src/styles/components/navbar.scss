@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    &__el{
+        margin-right: 25px;
+        
+        a{
+            color: $c-text;
+            text-decoration: none;
+        }
+        a:hover,
+        a:focus{
+            color: $c-blue;
+            text-decoration: underline;
+        }
+    }
+    &_el:last-child{
+        margin-right: 0;
+    }
+}
