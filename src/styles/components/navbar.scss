@@ -1,4 +1,6 @@
-.nav{
+
+@media (min-width: 1200px){
+    .nav{
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
@@ -6,7 +8,7 @@
     height: 80px;
     &__el{
         margin-right: 25px;
-        
+            
         a{
             color: $c-text;
             text-decoration: none;
@@ -16,8 +18,9 @@
             color: $c-blue;
             text-decoration: underline;
         }
-    }
-    &_el:last-child{
-        margin-right: 0;
+        }
+        &_el:last-child{
+            margin-right: 0;
+        }
     }
 }

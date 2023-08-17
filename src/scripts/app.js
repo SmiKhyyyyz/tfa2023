@@ -1,4 +1,5 @@
 console.info('Hello world');
+import { gsap } from "gsap";
 
 var btns = document.querySelectorAll(".btn-open");
 var hiddenText = document.querySelectorAll(".bloc-hidden")
