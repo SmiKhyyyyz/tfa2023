@@ -154,6 +154,7 @@ main {
 
     .grid-container--main {
         margin-bottom: 150px;
+        padding-top: 100px;
         height: 85vh;
     }
 
@@ -254,5 +255,11 @@ main {
         grid-row: 1/ span 3;
         width: 500px;
         height: 350px;
+    }
+    .barre{
+        grid-column: 2 / 3;
+        border-left: 5px solid gray;
+        height:120px;
+        width: 1px;
     }
 }
