@@ -134,6 +134,9 @@ main {
     .container-abso {
         margin: 15px 0;
     }
+    .img-principal{
+        grid-column: 2 / -2;
+    }
 }
 
 @media (min-width: 1200px){
@@ -160,6 +163,7 @@ main {
 
     .grid-container--textes {
         margin-bottom: 200px;
+        transform: translateX(-150px);
     }
 
     .title {
