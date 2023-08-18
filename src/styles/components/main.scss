@@ -56,7 +56,6 @@ main {
 .container-abso {
     position: relative;
     grid-column: 1 / -1;
-    height: 100%;
     display: flex;
     align-items: flex-end;
     background-color: transparent;
@@ -84,7 +83,6 @@ main {
 }
 .bloc-text{
     grid-column: 1 / -1;
-    margin: 25px 0;
     border: solid rgba($c-blue, $alpha: 0.4);
     border-radius: 25px;
     p{
@@ -122,6 +120,19 @@ main {
             font-size: 18px;
             line-height: 24px;
         }
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0 5%;
+        column-gap: 10px;
+    }
+    .img--textes {
+        grid-column: 2 / -2;
+        margin: 0 0 100px 0;
+    }
+    .container-abso {
+        margin: 15px 0;
     }
 }
 
