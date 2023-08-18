@@ -24,10 +24,13 @@ main {
 .grid-container--textes {
     margin-bottom: 100px;
 }
+.grid-container--textes:last-child{
+    margin-bottom: 25px;
+}
 
 .title {
     font-family: 'Playfair Display', serif;
-    color: black;
+    color: $c-text;
     font-size: 40px;
     font-weight: 700;
 }
@@ -55,7 +58,7 @@ main {
 
 .container-abso {
     position: relative;
-    grid-column: 1 / -1;
+    grid-column: 1 / -2;
     display: flex;
     align-items: flex-end;
     background-color: transparent;
@@ -164,11 +167,12 @@ main {
     .grid-container--textes {
         margin-bottom: 200px;
         transform: translateX(-150px);
+        opacity: 0;
     }
 
     .title {
         font-family: 'Playfair Display', serif;
-        color: black;
+        color: $c-text;
         font-size: 40px;
         font-weight: 700;
     }

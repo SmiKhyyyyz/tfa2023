@@ -9,68 +9,71 @@
 .nav{
     display: none;
 }
+$color_1: $c-text;
+$color_2: $c-blue;
+$background-color_1: $c-bg;
+$background-color_2: $c-text;
+$background-color_3: transparent;
+
 .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
-    transition: right 0.5s ease;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transition: 0.3s;
-    color: black;
-  }
-  .sidenav a:hover{
-    color: $c-blue;
-    text-decoration: underline;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidenav.active {
-    right: 0;
-  }
-  
-  .sidenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-  }
-  
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  .burger-icon{
-    margin: 10px;
-    position: fixed;
-    right: 0;
-  }
-  .burger-btn{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: -250px;
+	background-color: $c-bg;
+	padding-top: 60px;
+	transition: right 0.5s ease;
+	a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		display: block;
+		transition: 0.3s;
+		color: $c-text;
+		&:hover {
+			color: $c-blue;
+			text-decoration: underline;
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	.close {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		cursor: pointer;
+		border: none;
+		background: transparent;
+	}
+}
+.sidenav.active {
+	right: 0;
+}
+.burger-icon {
+	span {
+		display: block;
+		width: 35px;
+		height: 5px;
+		background-color: $c-text;
+		margin: 6px 0;
+	}
+	margin: 10px;
+	position: fixed;
+	right: 0;
+}
+.burger-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+    z-index: 300;
+}
+
 
 
 @media (min-width: 1200px){
@@ -85,7 +88,7 @@
     z-index: 100;
     &__el{
         margin-right: 25px;
-        background-color: rgba($color:white, $alpha: 0.6);
+        background-color: rgba($c-bg, $alpha: 0.6);
         padding: 5px;
         border-radius: 15px;
         a{

@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    margin: 50px 0 25px 0;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    .subNav{
+        list-style-type: none;
+        display: flex;
+        &__el{
+            margin: 0 10px;
+        }
+        &__el a{
+            color: $c-text;
+            text-decoration: none;
+        }
+        &__el a:hover,
+        &__el a:focus{
+        color: $c-blue;
+        text-decoration: underline;
+    }
+    }
+    .credits a{
+        color: $c-text;
+        text-decoration: none;
+    }
+    .credits a:hover,
+    .credits a:focus{
+        color: $c-blue;
+        text-decoration: underline;
+    }
+}
