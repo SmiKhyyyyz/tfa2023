@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 .logo{
     width: 50px;
     height: 50px;
@@ -13,17 +16,20 @@
     height: 80px;
     position: fixed;
     width: 90vw;
+    z-index: 100;
     &__el{
         margin-right: 25px;
-            
+        background-color: rgba($color:white, $alpha: 0.6);
+        padding: 5px;
+        border-radius: 15px;
         a{
             color: $c-text;
             text-decoration: none;
         }
         a:hover,
         a:focus{
-            color: $c-blue;
             text-decoration: underline;
+            color: $c-blue;
         }
         }
         &_el:last-child{
@@ -33,6 +39,7 @@
         &__el:first-child{
             position: absolute;
             left: 5%;
+            background-color: transparent
         }
     }
 }
