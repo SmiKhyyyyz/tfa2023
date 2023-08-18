@@ -1,0 +1,17 @@
+.main-uikit{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 22vh 0;
+    .title--uikit{
+        grid-column: 2;
+    }
+    .container-abso--uikit{
+        grid-column: 2;
+    }
+    .textes--uikit{
+        grid-column: 2;
+    }
+    a{
+        grid-column: 2;
+    }
+}
