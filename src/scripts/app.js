@@ -53,11 +53,12 @@ gsap.to("#presentation", {
 
 var btns = document.querySelectorAll(".btn-open");
 var hiddenText = document.querySelectorAll(".bloc-hidden")
-
-for (let i = 0; i < btns.length ; i++) {
-  btns[i].addEventListener("click", (e) => {
-    hiddenText[i].classList.toggle("bloc-hidden");
-  })
+if (".btn-open") {
+  for (let i = 0; i < btns.length ; i++) {
+    btns[i].addEventListener("click", (e) => {
+      hiddenText[i].classList.toggle("bloc-hidden");
+    })
+  }
 }
 
 
@@ -65,15 +66,16 @@ var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-
-function openNav() {
-  sidenav.classList.add("active");
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  sidenav.classList.remove("active");
+if (".openBtn"){
+  openBtn.onclick = openNav;
+  closeBtn.onclick = closeNav;
+  
+  
+  function openNav() {
+    sidenav.classList.add("active");
+  }
+  
+  function closeNav() {
+    sidenav.classList.remove("active");
+  }
 }
